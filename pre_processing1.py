@@ -54,11 +54,13 @@ def pre_pro2(df):
 
 df = pre_process1(csv_filepath1, csv_filepath2)
 df2 = pre_pro2((df))
-print(df2.head())
+#print(df2.head())
 
-print(df2.columns)
+#print(df2.columns)
 
-print(df2.info())
+#print(df2.info())
+
+df2.to_csv('analyse_this.csv', index=False)
 
 
 
