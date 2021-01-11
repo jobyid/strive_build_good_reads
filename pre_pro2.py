@@ -10,3 +10,10 @@ def pre_pro2():
     da["norm_max_min"] = normalized_df_max_min
     return normalized_df
     return normalized_df_max_min
+
+
+def count_awards(s):
+    #takes string s and counts the "," returns the count plus 1
+    return s.count(",") + 1
+
+print(count_awards("ocsar, bafta, somthing, good book"))
