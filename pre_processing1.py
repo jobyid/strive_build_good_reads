@@ -10,10 +10,10 @@ def pre_process1(csv_filepath):
     df = pd.read_csv(csv_filepath, index_col=0)
    
     avg_ratings = df['minirating'].str.split('avg').apply(lambda x: x[0])
-    avg_ratings =  avg_ratings.str.extract('(\d.+)')[0].apply(pd.to_numeric)#.apply(lambda x: int(x))
+    avg_ratings =  avg_ratings.str.extract('(\d.+)')[0].apply(pd.to_numeric).apply(lambda x: int(x))
 
     num_rating = df['minirating'].str.split('avg').apply(lambda x: x[1].split(' ')[3])
-    num_rating = num_rating.str.split(',').apply(lambda x: ''.join(x)).apply(pd.to_numeric())
+    num_rating = num_rating.str.split(',').apply(lambda x: ''.join(x)).apply(pd.to_numeric)
 
     author = df['Author']
 
@@ -37,3 +37,6 @@ def pre_pro2(df):
     return df
     
 
+df = pre_process1(csv_filepath)
+df2 = pre_pro2((df))
+print(df2.head())
