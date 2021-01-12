@@ -35,6 +35,6 @@ def alt_plot_for_Awards_ratings(pdfg):
     plt.savefig("ratings_vs_awards_alt.png")
     plt.show()
 
-#plot_ratings_year()
+plot_ratings_year()
 awards_ratings()
 
