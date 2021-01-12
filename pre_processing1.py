@@ -20,7 +20,7 @@ def pre_process1(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4):
     awards = df1['awards'].str.split(',').agg(np.size).astype('int').replace(1, np.nan).values[:900]
    
     avg_ratings = df['minirating'].str.split('avg').apply(lambda x: x[0])
-    avg_ratings =  avg_ratings.str.extract('(\d.+)')[0].apply(pd.to_numeric).apply(lambda x: int(x))[:900].values
+    avg_ratings =  avg_ratings.str.extract('(\d.+)')[0].apply(pd.to_numeric)[:900].values
 
     num_rating = df['minirating'].str.split('avg').apply(lambda x: x[1].split(' ')[3])
     num_rating = num_rating.str.split(',').apply(lambda x: ''.join(x)).apply(pd.to_numeric)[:900].values
@@ -34,7 +34,7 @@ def pre_process1(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4):
     num_pages = df3['num_pages']
 
     num_reviews = df2['num_reviews'][:900]
-    #num_rating = df['num_ratings'][:900]
+    #num_rating_f = df['num_rating'][:900]
     is_series = df2['series'][:900]
 
     #title = df['Title']
@@ -43,7 +43,7 @@ def pre_process1(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4):
 
     data = {'url': url, 'title': title, 'author': author, 'num_ratings': num_rating, 
             'avg_rating': avg_ratings, 'awards': awards, 'original_publish_year': publish_years,
-            'num_reviews': num_reviews, 'is_series': is_series, 'genre': genres, 'location': locations, 'num_pages': num_pages,}
+            'num_reviews': num_reviews, 'is_series': is_series, 'genre': genres, 'location': locations, 'num_pages': num_pages}
 
     good_read = pd.DataFrame(data)
     
