@@ -22,7 +22,11 @@ def pre_process1(csv_filepath):
 def pre_pro2():
     da = df["avg_rating"]
     normalized_da = (1 + (da - da.mean()) / (da.max() - da.min()) * 9
+<<<<<<< Updated upstream
     normalized_df_max_min = 1 + ((da - da.min())/(da.max() - da.min())) * 9
+=======
+    normalized_df_max_min = 1 + (da - da.min()) / (da.max() - da.min()) * 9
+>>>>>>> Stashed changes
     da["norm_mean"] = normalized_da
     da["norm_max_min"] = normalized_df_max_min
     return normalized_df
