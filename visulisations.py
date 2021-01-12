@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.stats as st
+import statsmodels.api as sm
 
 # 1. Create a 2D scatterplot with `pages` on the x-axis and `num_ratings` on the y-axis.
 # 2. Can you compute numerically the correlation coefficient of these two columns?
@@ -31,6 +32,7 @@ def awards_ratings():
 def alt_plot_for_Awards_ratings(pdfg):
     pdfg.plot(kind='bar', title="Awards Vs Ratings")
     plt.show()
+
 #plot_ratings_year()
 awards_ratings()
 
