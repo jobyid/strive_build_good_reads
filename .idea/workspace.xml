@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/goodreads.otd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +29,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
   <component name="RunManager" selected="Python.stats">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="strive_build_good_reads" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,6 +92,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ccruntests" factoryName="Run Study Tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <option name="studyTest" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.stats" />
@@ -92,25 +164,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="203" key="GridCell.Tab.0.bottom" timestamp="1610456441612">
+    <state width="1345" height="203" key="GridCell.Tab.0.bottom" timestamp="1610458986051">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610456441612" />
+    <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610458986051" />
     <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638197" />
-    <state width="1345" height="203" key="GridCell.Tab.0.center" timestamp="1610456441611">
+    <state width="1345" height="203" key="GridCell.Tab.0.center" timestamp="1610458986050">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610456441611" />
+    <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610458986050" />
     <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638196" />
-    <state width="1345" height="203" key="GridCell.Tab.0.left" timestamp="1610456441610">
+    <state width="1345" height="203" key="GridCell.Tab.0.left" timestamp="1610458986050">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610456441610" />
+    <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610458986050" />
     <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638196" />
-    <state width="1345" height="203" key="GridCell.Tab.0.right" timestamp="1610456441611">
+    <state width="1345" height="203" key="GridCell.Tab.0.right" timestamp="1610458986051">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610456441611" />
+    <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610458986051" />
     <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638197" />
   </component>
 </project>
