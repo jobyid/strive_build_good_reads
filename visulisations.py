@@ -25,7 +25,7 @@ def awards_ratings():
     pdfg = pdf.groupby(["awards"]).agg(ratings =('norm_max_min','mean'))
     alt_plot_for_Awards_ratings(pdfg)
     pdfg.reset_index(inplace=True)
-    pdfg.plot(kind="scatter", x="awards", y="ratings")
+    pdfg.plot(kind="scatter", x="awards", y="ratings", title="Awards vs Ratings")
     print(pdfg.head())
     plt.show()
 def alt_plot_for_Awards_ratings(pdfg):
