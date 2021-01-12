@@ -1,18 +1,14 @@
 import pandas as pd
 import numpy as np
 
-csv_filepath1 = './data/Strive_good_Reads_v1.csv'
-csv_filepath2 = './data/goodreads_min.csv'
 
 
 
-
-
-
-def pre_process1(csv_filepath1, csv_filepath2):
+def pre_process1(csv_filepath1, csv_filepath2, csv_filepath3):
 
     df = pd.read_csv(csv_filepath1, index_col=0)
     df1 = pd.read_csv(csv_filepath2)
+    df2 = pd.read_csv(csv_filepath3)
 
     df1.dropna(subset=['original_publish_year'], inplace=True)
 
@@ -30,12 +26,17 @@ def pre_process1(csv_filepath1, csv_filepath2):
 
     author = df['Author'][:1000].values
 
+    num_reviews = df2['num_reviews'][:1000]
+    #num_rating = df['num_ratings'][:1000]
+    is_series = df2['series'][:1000]
+
     #title = df['Title']
 
     url = df['Title_URL'][:1000].values
 
     data = {'url': url, 'title': title, 'author': author, 'num_ratings': num_rating, 
-            'avg_rating': avg_ratings, 'awards': awards, 'original_publish_year': publish_years }
+            'avg_rating': avg_ratings, 'awards': awards, 'original_publish_year': publish_years,
+            'num_reviews': num_reviews, 'is_series': is_series }
 
     good_read = pd.DataFrame(data)
     
@@ -52,7 +53,11 @@ def pre_pro2(df):
     return df
     
 
-df = pre_process1(csv_filepath1, csv_filepath2)
+csv_filepath1 = './data/Strive_good_Reads_v1.csv'
+csv_filepath2 = './data/goodreads_min.csv'
+csv_filepath3 = 'data/review_ratings_series.csv'
+
+df = pre_process1(csv_filepath1, csv_filepath2, csv_filepath3)
 df2 = pre_pro2((df))
 #print(df2.head())
 
@@ -60,7 +65,7 @@ df2 = pre_pro2((df))
 
 #print(df2.info())
 
-df2.to_csv('analyse_this.csv', index=False)
+df2.to_csv('./data/analyse_this.csv', index=False)
 
 
 
