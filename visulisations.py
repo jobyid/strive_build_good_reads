@@ -22,12 +22,11 @@ def awards_ratings():
     pdf = df[['norm_max_min',"awards"]]
     pdf["awards"]=pdf["awards"].fillna(0)
     pdfg = pdf.groupby(["awards"]).agg(ratings =('norm_max_min','mean'))
-    print(pdfg.head())
     alt_plot_for_Awards_ratings(pdfg)
-    #fig, ax = plt.subplots()
 
+    pdfg.plot(kind="scatter", x='ratings',y=0, title="Awards vs Ratings")
     #pdfg.plot.scatter(x='awards',y='ratings')
-    #plt.show()
+    plt.show()
 
 def alt_plot_for_Awards_ratings(pdfg):
     pdfg.plot(kind='bar', title="Awards Vs Ratings")
