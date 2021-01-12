@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+da = pd.read_csv('data/analyse_this.csv')
+
 def vis_norm_max_min(da):
 
-    ax = da["norm_max_min"].plot.bar(x='books', y='normalized values', rot=0)
-
-    plt.hist(ax)
+    da["norm_max_min"].plot.bar( rot=0)
 
     plt.title('Normalized max & mins', fontsize=10)
 
@@ -15,8 +15,7 @@ def vis_norm_max_min(da):
     plt.show()
 
 def vis_mean_norm(da):
-    ax = da["norm_mean"].plot.bar(x='books', y='normalized means', rot=0)
-    plt.hist(ax)
+    da["norm_mean"].plot.bar(x='books', y='normalized means', rot=0)
 
     plt.title('Normalized means', fontsize=10)
 
@@ -25,9 +24,11 @@ def vis_mean_norm(da):
     plt.show()
 
 def vis_all_norm(da):
-    mean = da["norm_mean"]
-    maxmin = da["norm_max_min"]
 
-    df = pd.DataFrame({'mean': mean,
-                       'maxmin': maxmin}, index=index)
-    ax = df.plot.bar(rot=0)
+    df = da[["norm_mean","norm_max_min"]]
+    df.plot.bar(rot=0)
+    plt.show()
+
+#vis_norm_max_min(da)
+#vis_mean_norm(da)
+vis_all_norm(da)
