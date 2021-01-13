@@ -37,3 +37,39 @@ def alt_plot_for_Awards_ratings():
     plt.ylabel("Mean Rating")
     plt.xlabel("Award Count")
     plt.show()
+
+
+#Question 4
+
+def vis_norm_max_min(da):
+
+    da["norm_max_min"].plot.hist( rot=0)
+
+    plt.title('Normalized max & mins', fontsize=10)
+
+    plt.savefig("plot_simple_histogramme_matplotlib_01.png")
+
+    plt.show()
+
+#Question 5
+
+def vis_mean_norm(da):
+    da["norm_mean"].plot.hist(x='books', y='normalized means', rot=0)
+
+    plt.title('Normalized means', fontsize=10)
+
+    plt.savefig("plot_simple_histogramme_matplotlib_02.png")
+
+    plt.show()
+
+#Question 6
+
+def vis_all_norm(da):
+
+    df = da[["norm_mean","norm_max_min"]]
+    df.plot.hist(rot=0)
+    plt.show()
+
+#vis_norm_max_min(da)
+#vis_mean_norm(da)
+#vis_all_norm(da)
