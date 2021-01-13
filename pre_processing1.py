@@ -50,33 +50,18 @@ def pre_process1(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4):
 
     return good_read
 
-
-def pre_pro2(df):
+def pre_pro2():
     da = df["avg_rating"]
-    normalized_da =  1 + ((da - da.mean())/(da.max() - da.min())) * 9
-    normalized_df_max_min = 1 + ((da - da.min())/(da.max() - da.min())) * 9
-    df["norm_mean"] = normalized_da
-    df["norm_max_min"] = normalized_df_max_min
-    return df
-    
-
-csv_filepath1 = './data/Strive_good_Reads_v1.csv'
-csv_filepath2 = './data/goodreads_min.csv'
-csv_filepath3 = 'data/review_ratings_series.csv'
-csv_filepath4 = 'data/pages_genre_loc.csv'
-
-df = pre_process1(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4)
-df2 = pre_pro2((df))
-#print(df2.head())
-
-#print(df2.columns)
-
-#print(df2.info())
-
-df2.to_csv('./data/analyse_this.csv', index=False)
+    normalized_da =  (1 + (da - da.mean())/ (da.max() - da.min()) * 9
+    normalized_df_max_min = 1 + (da - da.min())/ (da.max() - da.min()) * 9
+    da["norm_mean"] = normalized_da
+    da["norm_max_min"] = normalized_df_max_min
+    return normalized_df
+    return normalized_df_max_min
 
 
+def count_awards(s):
+    #takes string s and counts the "," returns the count plus 1
+    return s.count(",") + 1
 
-
-
-
+print(count_awards("ocsar, bafta, somthing, good book"))
