@@ -1,19 +1,25 @@
 import good_reads_visulisation as grv
 import sys
 import click
-grv.awards_ratings()
+
 @click.command()
 @click.option('--visualise','-v', help="Enter the name of the visulisation you would like to "
-                                       "see. Possible Options ['ratings_per_year','awards_ratings'] ")
+                                       "see. Possible Options ['ratings_per_year',"
+                                       "'awards_ratings', 'dis_norm_max_min','dis_mean_norm_rating'] ")
 @click.option('--stats', '-s', help="Choose the stat reprsentation you want to see from the "
                                     "following options: ['']")
 
 def good_reads(visualise, stats):
+    click.echo(visualise)
     if visualise == 'ratings_per_year':
         grv.ratings_per_year_joint_plot()
     if visualise == 'awards_ratings':
         grv.awards_ratings()
-    print(stats)
+        grv.alt_plot_for_Awards_ratings()
+    if visualise == 'dis_norm_max_min':
+        grv.vis_norm_max_min(grv.df)
+    if visualise == 'dis_mean_norm_rating':
+        grv.vis_mean_norm(grv.df)
 
 
 if __name__ == '__main__':

@@ -45,7 +45,7 @@ def vis_norm_max_min(da):
 
     da["norm_max_min"].plot.hist( rot=0)
 
-    plt.title('Normalized max & mins', fontsize=10)
+    plt.title('Distribution of Normalized max & min Ratings', fontsize=10)
 
     plt.savefig("plot_simple_histogramme_matplotlib_01.png")
 
@@ -56,7 +56,7 @@ def vis_norm_max_min(da):
 def vis_mean_norm(da):
     da["norm_mean"].plot.hist(x='books', y='normalized means', rot=0)
 
-    plt.title('Normalized means', fontsize=10)
+    plt.title('Distribution of Normalized rating means', fontsize=10)
 
     plt.savefig("plot_simple_histogramme_matplotlib_02.png")
 
@@ -65,7 +65,6 @@ def vis_mean_norm(da):
 #Question 6
 
 def vis_all_norm(da):
-
     df = da[["norm_mean","norm_max_min"]]
     df.plot.hist(rot=0)
     plt.show()
