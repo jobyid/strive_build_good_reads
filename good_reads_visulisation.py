@@ -276,4 +276,28 @@ def plot_avg_best_distribution(data):
     ax.set_ylabel('Frequency')
     plt.legend()
     plt.show()
+    
+    
+    #Question number 8
+    
+def awards_distribution(df):
+    data = df
+    count = data["awards"].value_counts().values
+
+    index = data["awards"].value_counts().index
+
+    #data.plot.bar(x = "awards", y = count)
+    plt.bar(index,count)
+    plt.title("award distribution in bars")
+    plt.xlabel("awards")
+    plt.ylabel("Number of books")
+    plt.show()
+    
+def awards_boxplot(df):
+   
+    da = df.boxplot(column = ["awards"], grid = False, color = "#0000ff");
+        
+    plt.title("boxplot for awards");
+    plt.suptitle("");
+    plt.show()
 
