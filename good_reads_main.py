@@ -4,8 +4,7 @@ import sys
 import click
 
 @click.command()
-@click.option('--visualise','-v', help="Enter the name of the visulisation you would like to "
-                                       "see. Possible Options ['ratings_per_year',"
+@click.option('--visualise','-v', help="Enter the name of the visualisation you would like to see. Possible Options ['ratings_per_year',"
                                        "'awards_ratings', 'dis_norm_max_min',"
                                        "'dis_mean_norm_rating','minmax_and_mean_norm'] ")
 @click.option('--stats', '-s', help="Choose the stat representation you want to see from the "
@@ -13,6 +12,7 @@ import click
 @click.option('--analysis', '-a', help="Choose the analysis representation you want to see from "
                                        "the "
                                     "following options: ['']")
+
 
 def good_reads(visualise, stats, analysis):
     if visualise == 'ratings_per_year':
