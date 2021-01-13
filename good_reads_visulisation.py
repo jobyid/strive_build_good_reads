@@ -21,18 +21,17 @@ def ratings_per_year_joint_plot():
 
 # Question 10
 def awards_ratings():
+    df.plot(kind="scatter", x="awards", y="norm_max_min", title="Awards vs Ratings")
+    plt.savefig("ratings_vs_awards.png")
+    plt.show()
+
+
+def alt_plot_for_Awards_ratings():
     pdf = df[['norm_max_min',"awards"]]
     pdf["awards"]=pdf["awards"].fillna(0)
     pdf = pdf[pdf['awards']>0]
     pdfg = pdf.groupby(["awards"]).agg(ratings =('norm_max_min','mean'))
     pdfg.reset_index(inplace=True)
-    df.plot(kind="scatter", x="awards", y="norm_max_min", title="Awards vs Ratings")
-    plt.savefig("ratings_vs_awards.png")
-    plt.show()
-    alt_plot_for_Awards_ratings(pdfg)
-
-
-def alt_plot_for_Awards_ratings(pdfg):
     pdfg.plot(kind="bar", x='awards', y="ratings",title="Awards Vs Ratings")
     plt.savefig("ratings_vs_awards_alt.png")
     plt.ylabel("Mean Rating")
