@@ -37,3 +37,4 @@ def alt_plot_for_Awards_ratings():
     plt.ylabel("Mean Rating")
     plt.xlabel("Award Count")
     plt.show()
+
