@@ -16,13 +16,17 @@ import matplotlib.pyplot as plt
                                     "following options: ['bayes']")
 @click.option('--analysis', '-a', help="Choose the analysis representation you want to see from "
                                        "the "
-                                    "following options: ['']")
+                                    "following options: ['awards', 'original_publish_year']")
 
 @click.option("--author", "-au", type=str, help="Enter the the name of an author in '' eg 'Jane "
                                                 "Austin'")
 
 def good_reads(visualise, stats, analysis, author):
-    if len(author) > 1:
+    if analysis == 'original_publish_year':
+        gra.original_publish_year(gra.df)
+    if analysis == 'awards':
+        gra.awards(gra.df)
+    if author is not None:
         book = gra.my_best_book(author)
         click.echo("This authors best rated book is: " + str(book))
     if visualise == 'ratings_per_year':
