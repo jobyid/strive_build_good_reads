@@ -209,7 +209,7 @@ def make_pdf(dist, params, size=10000):
 
     return pdf
 
-
+data = df['avg_rating']
 # Plot for comparison
 plt.figure(figsize=(12,8))
 ax = data.plot(kind='hist', bins=50, alpha=0.5, density=True)
@@ -286,7 +286,7 @@ plt.show()
 
 
 
-data = df['avg_rating']
+
 
 fig1, fig2 = plot_pdf_avg_rating(data)
 plt.show()
