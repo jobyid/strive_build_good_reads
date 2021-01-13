@@ -10,3 +10,14 @@ def my_best_book(author):
     return rating.title
 
 my_best_book('Jane Austen')
+
+def awards(df):
+    data=df
+    df = data.groupby("awards")["awards"].count()
+    print(df)
+    
+    
+def original_publish_year(df):
+    data=df
+    df = data.groupby("original_publish_year")["num_ratings"].mean()
+    print(df)
