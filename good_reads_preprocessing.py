@@ -63,7 +63,7 @@ def clean_the_places():
     df = pd.read_csv('data/places.csv')
     df.replace(to_replace=[r"\\t|\\n|\\r", "\t|\n|\r"], value=["",""], regex=True, inplace=True)
     places = df['places'].dropna()
-    
+
     print(places)
 
 clean_the_places()
