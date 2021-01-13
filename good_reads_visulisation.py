@@ -67,6 +67,7 @@ def vis_mean_norm(da):
 def vis_all_norm(da):
     df = da[["norm_mean","norm_max_min"]]
     df.plot.hist(rot=0)
+    plt.title('Comparison of distribution of the Min/Max and Mean Norms', fontsize=10)
     plt.show()
 
 #vis_norm_max_min(da)
