@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.stats as st
 import seaborn as sns
+from scipy.stats import norm
 
 # 1. Create a 2D scatterplot with `pages` on the x-axis and `num_ratings` on the y-axis.
 # 2. Can you compute numerically the correlation coefficient of these two columns?
@@ -10,18 +11,27 @@ import seaborn as sns
 
 
 def scatterplot_2d(df, x, y, xlabel, ylabel, title):
-    scatter_fig = plt.figure()
+    fig, ax = plt.subplots()
     sns.set_style('darkgrid')
     sns.set(rc={'figure.figsize':(9,6)})
-    sns.scatterplot(x=x, y=y, data=df)
+    ax = sns.scatterplot(x=x, y=y, data=df)
     add_label_title(xlabel=xlabel, ylabel=ylabel, title=title)
-    return scatter_fig
+    return fig
+
+def scatterplot_log(df, x, y, xlabel, ylabel, title):
+    fig, ax = plt.subplots()
+    sns.set_style('darkgrid')
+    sns.set(rc={'figure.figsize':(9,6)})
+    ax = sns.scatterplot(x=x, y=y, data=df)
+    ax.set_yscale('log')
+    add_label_title(xlabel=xlabel, ylabel=ylabel, title=title)
+    return fig
 
 
 def add_label_title(xlabel, ylabel, title):
     plt.xlabel(xlabel, fontsize=12)
     plt.ylabel(ylabel, fontsize=12)
-    plt.title(title, fontsize=16);
+    plt.title(title, fontsize=14);
 
 
 def calc_corr_coef(df, x, y):
@@ -30,24 +40,31 @@ def calc_corr_coef(df, x, y):
 
 
 def display_distribution_hist(df, x, xlabel, ylabel, title):
-    hist_fig = plt.figure()
-    df[x].plot(kind='hist')
+    fig, ax = plt.subplots()
+    ax = sns.distplot(df[x], kde=True, hist=True, label='Data Distribution',  kde_kws = {'linewidth': 2, 'legend':True})
+    kde = st.gaussian_kde(df[x]) 
+    idx = np.argmax(kde.pdf(df[x])) 
+    plt.axvline(df[x][idx], color='red', label=f'{df[x][idx]}') 
+    ax = sns.distplot(df[x], kde = False, fit=norm, norm_hist=False, hist=False, kde_kws = {'linewidth': 2, 'legend':True}, label='Normal Distribution')
+    plt.legend()
     add_label_title(xlabel=xlabel, ylabel=ylabel, title=title)
-    return hist_fig 
+    return fig 
 
 
 def display_box_plot(df, x,xlabel, ylabel=None, title=None):
-    sns.boxplot(data=df, x=x)
+    fig, ax = plt.subplots()
+    ax = sns.boxplot(data=df, x=x)
     add_label_title(xlabel=xlabel, ylabel=ylabel, title=title)
-    plt.show()
+    return fig
 
 
 
 def display_violin_plot(df, x, y=None, xlabel=None, ylabel=None, title=None):
-    sns.violinplot(data=df, x=x, y=y, inner='quartile', scale='count')  
+    fig, ax = plt.subplots()
+    ax = sns.violinplot(data=df, x=x, y=y, inner='quartile', scale='count')  
     add_label_title(xlabel=xlabel, ylabel=ylabel, title=title)
     plt.xticks([0,1], ['Not Series', 'Series'])
-    plt.show()
+    return fig
 
 
 
@@ -56,8 +73,18 @@ def display_violin_plot(df, x, y=None, xlabel=None, ylabel=None, title=None):
 
 df = pd.read_csv('./data/analyse_this.csv')
 
-scatterplot_2d =  scatterplot_2d(df, 'num_pages', 'num_ratings', 'Number of pages', 'Number of ratings', \
+scatterplot_2d =  scatterplot_2d(df, 'num_pages', 'num_ratings', 'Number of Pages', 'Number of Ratings', \
                                     'Scatter Plot Comparing \n Number of Ratings to Number of Pages of Books')
+plt.show()
+
+
+scatterplot_log = scatterplot_log(df, 'num_pages', 'num_ratings', 'Number of Pages', 'Number of Ratings (Log Scale)', \
+                                    'Scatter Plot Comparing \n Number of Ratings(Log Scale) to Number of Pages of Books')
+plt.show()
+
+
+hist_fig = display_distribution_hist(df, 'avg_rating', xlabel='Average Rating', ylabel='Density', 
+                       title='Frequency Distribution of Average Rating')
 plt.show()
 
 
@@ -72,11 +99,6 @@ box_fig = display_box_plot(df, 'avg_rating', xlabel='Average Rating',
                        title='Box Plot Showing Distribution of Average Rating')
 plt.show()
 
-
-
-hist_fig = display_distribution_hist(df, 'avg_rating', xlabel='Average Rating', ylabel='Frequency', 
-                       title='Frequency Distribution of Average Rating')
-plt.show()
 
 
 
