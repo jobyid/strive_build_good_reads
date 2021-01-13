@@ -11,7 +11,9 @@ import matplotlib.pyplot as plt
                                        "see. Possible Options ['ratings_per_year',"
                                        "'awards_ratings', 'dis_norm_max_min',"
                                        "'dis_mean_norm_rating','minmax_and_mean_norm','num_pages_vs_num_ratings',"
-                                       "'avg_rating_distribution', 'best_fit_distribution_for_avg_rating'] ")
+                                       "'avg_rating_distribution', "
+                                       "'best_fit_distribution_for_avg_rating', "
+                                       "'awards_distribution','awards_boxplot'] ")
 @click.option('--stats', '-s', help="Choose the stat representation you want to see from the "
                                     "following options: ['bayes']")
 @click.option('--analysis', '-a', help="Choose the analysis representation you want to see from "
@@ -29,6 +31,10 @@ def good_reads(visualise, stats, analysis, author):
     if author is not None:
         book = gra.my_best_book(author)
         click.echo("This authors best rated book is: " + str(book))
+    if visualise == "awards_boxplot":
+        grv.awards_boxplot(grv.df)
+    if visualise == "awards_distribution":
+        grv.awards_distribution(grv.df)
     if visualise == 'ratings_per_year':
         grv.ratings_per_year_joint_plot()
     if visualise == 'awards_ratings':
@@ -59,9 +65,8 @@ def good_reads(visualise, stats, analysis, author):
 
 
 if __name__ == '__main__':
-    #print("This is main what would you like to run?")
     good_reads()
-    #Question 1
+
 
 
 

@@ -235,7 +235,7 @@ def make_pdf(dist, params, size=10000):
 
     return pdf
 
-df = pd.read_csv('./data/analyse_this.csv')
+#df = pd.read_csv('./data/analyse_this.csv')
 
 data = df['avg_rating']
 
