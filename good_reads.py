@@ -1,12 +1,7 @@
 import pandas as pd
+import sys
 
-def preprocessing(csv_path):
-    print("do some preprocessing")
-    #return the data frame
+if __name__ == '__main__':
+    print("This is main what would you like to run?")
 
-def analyse(df):
-    print("do some analysis")
 
-def main():
-    df = preprocessing()
-    analyse(df)
