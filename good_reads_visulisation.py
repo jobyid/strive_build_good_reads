@@ -13,12 +13,11 @@ def ratings_per_year_joint_plot():
     pdf = df[['avg_rating',"original_publish_year"]]
     pdf = pdf[pdf['original_publish_year']<2022]
     pdf = pdf[pdf['original_publish_year']>200]
-    scatter_fig = plt.figure()
     sns.set_style('darkgrid')
     sns.set(rc={'figure.figsize':(9,6)})
     sns.jointplot(x='original_publish_year', y='avg_rating', data=pdf)
-    scatter_fig.savefig("ratings_vs_year_joint.png")
-    return scatter_fig
+    plt.show()
+
 
 # Question 10
 def awards_ratings():
