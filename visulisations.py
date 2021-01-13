@@ -209,6 +209,41 @@ def make_pdf(dist, params, size=10000):
 
     return pdf
 
+
+
+    
+
+#Question 1
+scatterplot_2d =  scatterplot_2d(df, 'num_pages', 'num_ratings', 'Number of Pages', 'Number of Ratings', 'Scatter Plot Comparing \n Number of Ratings to Number of Pages of Books')
+plt.show()
+
+
+
+scatterplot_log = scatterplot_log(df, 'num_pages', 'num_ratings', 'Number of Pages', 'Number of Ratings (Log Scale)', 'Scatter Plot Comparing \n Number of Ratings(Log Scale) to Number of Pages of Books')
+plt.show()
+
+
+#Question 2
+pages_ratings_corr_coef = calc_corr_coef(df, 'num_pages', 'num_ratings')
+print(f'The correlation coefficient between number of pages and number of ratings is {pages_ratings_corr_coef}.')
+print(f'This shows a very weak correlation between number of pages and number of ratings. This is also clearly illustrated in the scatterplot') 
+
+
+#Question 3
+hist_fig = display_distribution_hist(df, 'avg_rating', xlabel='Average Rating', ylabel='Density', title='Frequency Distribution of Average Rating')
+plt.show()
+
+
+box_fig = display_box_plot(df, 'avg_rating', xlabel='Average Rating',  title='Box Plot Showing Distribution of Average Rating')
+plt.show()
+
+
+violin_fig = display_violin_plot(df, y='avg_rating', x='is_series', ylabel='Average Rating', title='Violin Plot Showing Distribution of Average Rating')
+plt.show()
+
+
+
+# Question 7
 data = df['avg_rating']
 # Plot for comparison
 plt.figure(figsize=(12,8))
@@ -245,48 +280,13 @@ ax.set_xlabel(u'Average Rating')
 ax.set_ylabel('Frequency')
 plt.legend()
 plt.show()
-    
-
-
-#scatterplot_2d =  scatterplot_2d(df, 'num_pages', 'num_ratings', 'Number of Pages', 'Number of Ratings', 'Scatter Plot Comparing \n Number of Ratings to Number of Pages of Books')
-plt.show()
-
-
-
-#scatterplot_log = scatterplot_log(df, 'num_pages', 'num_ratings', 'Number of Pages', 'Number of Ratings (Log Scale)', 'Scatter Plot Comparing \n Number of Ratings(Log Scale) to Number of Pages of Books')
-plt.show()
-
-
-#hist_fig = display_distribution_hist(df, 'avg_rating', xlabel='Average Rating', ylabel='Density', title='Frequency Distribution of Average Rating')
-plt.show()
-
-
-pages_ratings_corr_coef = calc_corr_coef(df, 'num_pages', 'num_ratings')
-print(f'The correlation coefficient between number of pages and number of ratings is {pages_ratings_corr_coef}.')
-print(f'This shows a very weak correlation between number of pages and number of ratings. This is also clearly illustrated in the scatterplot') 
-
-
-
-#box_fig = display_box_plot(df, 'avg_rating', xlabel='Average Rating',  title='Box Plot Showing Distribution of Average Rating')
-plt.show()
-
-
-#violin_fig = display_violin_plot(df, y='avg_rating', x='is_series', ylabel='Average Rating', title='Violin Plot Showing Distribution of Average Rating')
-plt.show()
-
-
-#hist_fig = display_distribution_hist(df, 'avg_rating', xlabel='Average Rating', ylabel='Frequency', title='Frequency Distribution of Average Rating')
-plt.show()
-
-
-
-
-#plot_ratings_year()
-#awards_ratings()
 
 
 
 
 
-fig1, fig2 = plot_pdf_avg_rating(data)
-plt.show()
+#Question 9
+plot_ratings_year()
+
+#Question 10
+awards_ratings()
