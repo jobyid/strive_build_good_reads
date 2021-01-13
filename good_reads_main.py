@@ -1,5 +1,6 @@
 import good_reads_visulisation as grv
 import good_reads_stats as grs
+import good_reads_analyse as gra
 import sys
 import click
 import pandas as pd
@@ -17,11 +18,13 @@ import matplotlib.pyplot as plt
                                        "the "
                                     "following options: ['']")
 
+@click.option("--author", "-au", type=str, help="Enter the the name of an author in '' eg 'Jane "
+                                                "Austin'")
 
-
-
-def good_reads(visualise, stats, analysis):
-    df = pd.read_csv('./data/analyse_this.csv')
+def good_reads(visualise, stats, analysis, author):
+    if len(author) > 1:
+        book = gra.my_best_book(author)
+        click.echo("This authors best rated book is: " + str(book))
     if visualise == 'ratings_per_year':
         grv.ratings_per_year_joint_plot()
     if visualise == 'awards_ratings':
@@ -36,13 +39,13 @@ def good_reads(visualise, stats, analysis):
     if stats == 'bayes':
         grs.bayes_prop()
     if visualise == 'num_pages_vs_num_ratings':
-        grv.scatterplot_2d(df)
-        grv.scatterplot_log(df)
+        grv.scatterplot_2d(grv.df)
+        grv.scatterplot_log(grv.df)
         plt.show()
     if visualise == 'avg_rating_distribution':
-        grv.display_distribution_hist(df)
-        grv.display_box_plot(df)
-        grv.display_violin_plot(df)
+        grv.display_distribution_hist(grv.df)
+        grv.display_box_plot(grv.df)
+        grv.display_violin_plot(grv.df)
         plt.show()
     if visualise == 'best_fit_distribution_for_avg_rating':
         data = df['avg_rating']

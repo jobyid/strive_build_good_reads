@@ -5,8 +5,19 @@ import seaborn as sns
 df = pd.read_csv('data/analyse_this.csv')
 
 def my_best_book(author):
-    autors_books = df[df['author']== author]
-    rating = autors_books.loc[autors_books['norm_max_min'].idxmax()]
-    return rating.title
+    if df['author'].str.contains(author).sum() > 0:
+        autors_books = df[df['author']== author]
+        rating = autors_books.loc[autors_books['norm_max_min'].idxmax()]
+        return rating.title
+    return "Author not found"
 
-my_best_book('Jane Austen')
+def awards(df):
+    data=df
+    df = data.groupby("awards")["awards"].count()
+    print(df)
+
+
+def original_publish_year(df):
+    data=df
+    df = data.groupby("original_publish_year")["num_ratings"].mean()
+    print(df)
