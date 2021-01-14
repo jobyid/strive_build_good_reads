@@ -12,8 +12,9 @@ with st.beta_container():
         st.image('fig/all_distributions.png',use_column_width=True)
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above shows all the possible distributions we can try to fit to the data. We used this to determine the best fit. 
-                """)
+                This chart shows how our the average rating of the best books ever
+                 fits to the full list of the current scipy.stats distributions  
+                 and also determine the distribution with the least error. """)
         st.image('fig/Best_Books_With_Highest_Rating.png',use_column_width=True)
         with st.beta_expander("See explanation"):
             st.write("")
@@ -21,9 +22,9 @@ with st.beta_container():
         st.image('fig/avg_distribution.png',use_column_width=True)
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they're *guaranteed* to
-                be random.
+                The chart above depicts how closely distribution of average rating of books rated as best ever
+                follows that of a normal distribution and that the highest point on the data distribution curve is 4.03.
+                 This implies that most books had a rating around 4.03.
                 """)
         st.image('fig/ratings_year_joint.png',use_column_width=True)
         with st.beta_expander("See explanation"):
@@ -32,9 +33,8 @@ with st.beta_container():
         st.image('fig/Avg_Rating_boxplot.png',use_column_width=True)
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they're *guaranteed* to
-                be random.
+                The chart above illustrates how 50% of average ratings of books lie between 3.95 to 4.21.
+                We can also see that there are a few outliers.
                 """)
         st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
         with st.beta_expander("See explanation"):
