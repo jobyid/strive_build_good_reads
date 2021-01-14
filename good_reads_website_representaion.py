@@ -43,6 +43,7 @@ st.write("In 1000 Good Reads we believe that reading should not be a complicated
          " If you are not certain on where to put your money, you can **relax** and trust on our Data Science team."
          " We are there to pre-select the **best reads**")
 st.write(" ")
+ballons = False
 with st.sidebar.beta_container():
     st.markdown("**Do you need a book recommendation?**")
     st.markdown("""Well why not let some science help you, use our book recommendation engine 
@@ -52,8 +53,11 @@ with st.sidebar.beta_container():
         st.write("The science says you should read:")
         with st.spinner("Wait For it"):
             time.sleep(2)
-        st.write(re.recoomend_a_book())
-
+            ballons = True
+        book = re.recoomend_a_book()
+        st.markdown(book)
+if ballons:
+    st.balloons()
 with st.beta_container():
     st.subheader("Representing the Data")
     col1, col2, col3, col4 = st.beta_columns(4)
