@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/strive_build_good_reads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/strive_build_good_reads.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/good_reads_visulisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_reads_visulisation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good_reads_website_representaion.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_reads_website_representaion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +28,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/websiteBits" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/good_reads_website_representaion.py" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/websiteBits" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.good_reads_visulisation">
-    <configuration name="good_reads_analyse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.visualIzations 4to6">
+    <configuration name="stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="strive_build_good_reads" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,70 +43,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/good_reads_analyse.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="good_reads_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="strive_build_good_reads" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/good_reads_preprocessing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="good_reads_stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="strive_build_good_reads" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/good_reads_stats.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="good_reads_visulisation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="strive_build_good_reads" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/good_reads_visulisation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stats.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,13 +73,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="visulisations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="strive_build_good_reads" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visulisations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.good_reads_visulisation" />
-        <item itemvalue="Python.good_reads_analyse" />
-        <item itemvalue="Python.good_reads_preprocessing" />
-        <item itemvalue="Python.good_reads_stats" />
         <item itemvalue="Python.visualIzations 4to6" />
+        <item itemvalue="Python.stats" />
+        <item itemvalue="Python.visulisations" />
       </list>
     </recent_temporary>
   </component>
@@ -184,61 +114,36 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1366" height="191" key="GridCell.Tab.0.bottom" timestamp="1610574569648">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610618404384">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="191" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.821@-1366.-358.1366.745" timestamp="1610561045773" />
-    <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.821@0.23.1440.821" timestamp="1610545467191" />
-    <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.822@0.23.1440.822" timestamp="1610544067404" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610618404384" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1610539670909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
     <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453147" />
     <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638197" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="191" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1610574569648" />
-    <state width="1366" height="191" key="GridCell.Tab.0.center" timestamp="1610574569647">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1610539670909">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="191" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.821@-1366.-358.1366.745" timestamp="1610561045772" />
-    <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.821@0.23.1440.821" timestamp="1610545467190" />
-    <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.822@0.23.1440.822" timestamp="1610544067403" />
     <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453147" />
     <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638196" />
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="191" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1610574569647" />
-    <state width="1366" height="191" key="GridCell.Tab.0.left" timestamp="1610574569647">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1610539670909">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="191" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.821@-1366.-358.1366.745" timestamp="1610561045771" />
-    <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.821@0.23.1440.821" timestamp="1610545467190" />
-    <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.822@0.23.1440.822" timestamp="1610544067403" />
     <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453146" />
     <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638196" />
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="191" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1610574569647" />
-    <state width="1366" height="191" key="GridCell.Tab.0.right" timestamp="1610574569647">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1610539670909">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1305" height="191" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.821@-1366.-358.1366.745" timestamp="1610561045772" />
-    <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.821@0.23.1440.821" timestamp="1610545467191" />
-    <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.822@0.23.1440.822" timestamp="1610544067404" />
     <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453147" />
     <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638197" />
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="191" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1610574569647" />
-    <state x="-1171" y="-353" key="SettingsEditor" timestamp="1610551590335">
-      <screen x="-1366" y="-358" width="1366" height="745" />
-    </state>
-    <state x="-1171" y="-353" key="SettingsEditor/-1366.-358.1366.745/0.23.1440.821@-1366.-358.1366.745" timestamp="1610551590335" />
   </component>
 </project>
