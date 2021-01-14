@@ -14,7 +14,9 @@ with st.beta_container():
             st.write("""
                 The chart above shows all the possible distributions we can try to fit to the data. We used this to determine the best fit. 
                 """)
-        st.image('fig/all_distributions.png',use_column_width=True)
+        st.image('fig/Best_Books_With_Highest_Rating.png',use_column_width=True)
+        with st.beta_expander("See explanation"):
+            st.write("")
     with col2:
         st.image('fig/avg_distribution.png',use_column_width=True)
         with st.beta_expander("See explanation"):
@@ -23,6 +25,9 @@ with st.beta_container():
                 I rolled actual dice for these, so they're *guaranteed* to
                 be random.
                 """)
+        st.image('fig/ratings_year_joint.png',use_column_width=True)
+        with st.beta_expander("See explanation"):
+            st.write("")
     with col3:
         st.image('fig/Avg_Rating_boxplot.png',use_column_width=True)
         with st.beta_expander("See explanation"):
@@ -31,6 +36,9 @@ with st.beta_container():
                 I rolled actual dice for these, so they're *guaranteed* to
                 be random.
                 """)
+        st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
+        with st.beta_expander("See explanation"):
+            st.write("")
     with col4:
         st.image('fig/Avg_Rating_Violin_plot.png',use_column_width=True)
         with st.beta_expander("See explanation"):
@@ -39,7 +47,9 @@ with st.beta_container():
                 part of a series or not. As you can see from the figure there is not a 
                 significant differance. In fact from this data we concluded that whether or not a book is in a series of books did not affect its rating.   
                 """)
-
+        st.image("fig/Best_Books_With_Highest_Reviews.png",use_column_width=True)
+        with st.beta_expander("See explanation"):
+            st.write("")
 with st.beta_container():
     st.subheader("What's an Authors Best Rated Book? Find Out Below")
     auth1, auth2 = st.beta_columns([3, 1])

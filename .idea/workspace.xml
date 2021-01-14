@@ -20,10 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/analyse_website.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing_website.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrpae_web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grpahs.py" beforeDir="false" afterPath="$PROJECT_DIR$/grpahs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
