@@ -3,13 +3,19 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
+import recommendation_engine as re
+import time
 df = pd.read_csv('data/good_reads_df_web.csv',index_col=0)
 da = pd.read_csv('data/awards_by_year.csv')
 
-st.markdown('![](<https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github'
-            '&logoColor=white>)')
+b1, b2 = st.beta_columns([1,8])
+with b1:
+    st.markdown('[![](<https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github'
+            '&logoColor=white>)](<https://github.com/jobyid/strive_build_good_reads>)')
 #python bagde
-st.markdown('![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python'
+with b2:
+    st.markdown('![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo'
+                     '=python'
             '&logoColor=white)')
 
 
@@ -30,15 +36,23 @@ st.write(" ")
 st.sidebar.title("1000 Good reads")
 st.sidebar.write("More time reading. Less time searching")
 
-st.sidebar.image("fig/5231.jpg",use_column_width = True)
+st.sidebar.image("fig/5231.jpg", use_column_width = True)
 
 st.write(" ")
 st.write("In 1000 Good Reads we believe that reading should not be a complicated, stressful or even an unsatisfying hobbie."
          " If you are not certain on where to put your money, you can **relax** and trust on our Data Science team."
          " We are there to pre-select the **best reads**")
 st.write(" ")
-
-
+with st.sidebar.beta_container():
+    st.markdown("**Do you need a book recommendation?**")
+    st.markdown("""Well why not let some science help you, use our book recommendation engine 
+    below, and get the perfect next read. """)
+    st.text_input("Enter the last book you read:")
+    if st.button("Recommend"):
+        st.write("The science says you should read:")
+        with st.spinner("Wait For it"):
+            time.sleep(2)
+        st.write(re.recoomend_a_book())
 
 with st.beta_container():
     st.subheader("Representing the Data")
@@ -111,7 +125,7 @@ st.write("So,what are you waiting for?   **Subscribe Now!**   and get a **30% di
 
 #Despite the awards count, you can rely on us to select good quality books for your mind.
 
-st.title("This is how we work")
+st.title("The Science behind it all")
 st.subheader("Scraping the Data")
 st.markdown("The data for our exploration of the best reads came from the website [Good Reads]("
             "<https://www.goodreads.com>), unfortunately the API for the website has been "
@@ -549,3 +563,22 @@ st.subheader("Interesting Data")
 st.dataframe(da)
 
 
+with st.sidebar.beta_container():
+    st.subheader("The Team of Book Readers and Data Lovers")
+    team1, team2 = st.beta_columns(2)
+    with team1:
+        st.markdown("[**Joby ingram-Dodd**](<https://github.com/jobyid>)")
+        st.image("fig/joby.png",use_column_width=True)
+        st.markdown("[**Ibrahim Animashaun**](<https://github.com/iaanimashaun>)")
+        st.image("fig/ibrahim.png",use_column_width=True)
+    with team2:
+        st.markdown("[**Martin Vilar Karlen**](<https://github.com/mvilar2018>)")
+        st.image("fig/martin.png",use_column_width=True)
+
+        st.markdown("[**Oluseyi Oyedemi**](<https://github.com/Seyi85>)")
+        st.image("fig/oluseyi.png",use_column_width=True)
+
+with st.sidebar.beta_container():
+    st.subheader("Like what we are doing? Why not buy us a coffee?")
+    st.markdown('[![](<https://www.buymeacoffee.com/library/content/images/2020/09/image--67--1.png>)]('
+            '<https://www.buymeacoffee.com/joby>)')
