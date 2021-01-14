@@ -1,4 +1,19 @@
+import streamlit as st
+# To make things easier later, we're also importing numpy and pandas for
+# working with sample data.
+import numpy as np
 import pandas as pd
+import good_reads_analyse as gra
+import time
+
+st.subheader("Processing the Data")
+st.markdown("With our freshly created set of CSV files we need to work some pandas magic and "
+            "wrangle this into something useful. Cleaning data was key, although much of this had been done in scraping, then we needed to make some dataframes for analysis. We wanted to explore how the ratings played a role im the rankings, so we performed some normalisations on the ratings data.")
+st.markdown("The code we used for this process can be found [here]("
+            "<https://github.com/jobyid/strive_build_good_reads/blob/main/good_reads_preprocessing.py>) ")
+st.markdown("**Expand below to see the code**")
+with st.beta_expander("See the Code"):
+    st.code('''import pandas as pd
 import numpy as np
 
 
@@ -67,3 +82,4 @@ def clean_the_places():
     print(places)
 
 
+''')

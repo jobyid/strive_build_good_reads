@@ -1,4 +1,10 @@
+![](https://tokei.rs/b1/github/jobyid/strive_build_good_reads)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 
+[See the work here](<>)
 #Good Reads Best Books Analysis
 
 In this project we were set with the task of scraping data from the goodreads.com and then performing some analysis of the data we gathered. 
