@@ -60,49 +60,80 @@ if ballons:
     st.balloons()
 with st.beta_container():
     st.subheader("Representing the Data")
-    col1, col2, col3, col4 = st.beta_columns(4)
+    col1, col2, col3 = st.beta_columns(3)
     with col1:
-        st.image('fig/all_distributions.png',use_column_width=True)
+        st.markdown("**Fit a Distribution**")
         with st.beta_expander("See explanation"):
             st.write("""
                 This chart shows how our the average rating of the best books ever
                  fits to the full list of the current scipy.stats distributions  
                  and also determine the distribution with the least error. """)
+        st.image('fig/all_distributions.png',use_column_width=True)
+
+        st.write("")
+        st.write("")
+        st.markdown("**Highest Rated Books**")
+        with st.beta_expander("See explanation"):
+            st.write("A representation of the top 10 highest rated books")
         st.image('fig/Best_Books_With_Highest_Rating.png',use_column_width=True)
-        with st.beta_expander("See explanation"):
-            st.write("")
-    with col2:
-        st.image('fig/avg_distribution.png',use_column_width=True)
-        with st.beta_expander("See explanation"):
-            st.write("""
-                The chart above depicts how closely distribution of average rating of books rated as best ever
-                follows that of a normal distribution and that the highest point on the data distribution curve is 4.03.
-                 This implies that most books had a rating around 4.03.
-                """)
-        st.image('fig/ratings_year_joint.png',use_column_width=True)
-        with st.beta_expander("See explanation"):
-            st.write("")
-    with col3:
-        st.image('fig/Avg_Rating_boxplot.png',use_column_width=True)
-        with st.beta_expander("See explanation"):
-            st.write("""
-                The chart above illustrates how 50% of average ratings of books lie between 3.95 to 4.21.
-                We can also see that there are a few outliers.
-                """)
-        st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
-        with st.beta_expander("See explanation"):
-            st.write("")
-    with col4:
-        st.image('fig/Avg_Rating_Violin_plot.png',use_column_width=True)
+
+        st.write("")
+        st.write("")
+        st.markdown("**Ratings Vs Series**")
         with st.beta_expander("See explanation"):
             st.write("""
                 The chart above shows the relationship between average rating and if a book is 
                 part of a series or not. As you can see from the figure there is not a 
                 significant differance. In fact from this data we concluded that whether or not a book is in a series of books did not affect its rating.   
                 """)
-        st.image("fig/Best_Books_With_Highest_Reviews.png",use_column_width=True)
+        st.image('fig/Avg_Rating_Violin_plot.png',use_column_width=True)
+    with col2:
+        st.markdown("**Distribution**")
         with st.beta_expander("See explanation"):
-            st.write("")
+            st.write("""
+                The chart above depicts how closely distribution of average rating of books rated as best ever
+                follows that of a normal distribution and that the highest point on the data distribution curve is 4.03.
+                 This implies that most books had a rating around 4.03.
+                """)
+        st.image('fig/avg_distribution.png',use_column_width=True)
+
+        st.write("")
+        st.write("")
+        st.markdown("**Ratings vs Year**")
+        with st.beta_expander("See explanation"):
+            st.write("Showing the ratings vs the year ")
+        st.image('fig/ratings_year_joint.png',use_column_width=True)
+
+        st.write("")
+        st.write("")
+        st.markdown("**Highest Reviewed Books **")
+        with st.beta_expander("See explanation"):
+            st.write("The top 10 highest reviewed books")
+        st.image("fig/Best_Books_With_Highest_Reviews.png",use_column_width=True)
+    with col3:
+        st.markdown("**Average Rating**")
+        with st.beta_expander("See explanation"):
+            st.write("""
+                The chart above illustrates how 50% of average ratings of books lie between 3.95 to 4.21.
+                We can also see that there are a few outliers.
+                """)
+        st.image('fig/Avg_Rating_boxplot.png',use_column_width=True)
+
+        st.write("")
+        st.write("")
+        st.markdown("**Books with most Awards**")
+        with st.beta_expander("See explanation"):
+            st.write("top 10 ten most awarded books")
+        st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
+
+        st.write("")
+        st.write("")
+        st.markdown("**Pages vs Ratings**")
+        with st.beta_expander("See explanation"):
+            st.write("Number of pages vs rating")
+        st.image("fig/num_pages_rating_scatter.png",use_column_width=True)
+
+
 
 with st.sidebar.beta_container():
     st.subheader("What's an Authors Best Rated Book? Find Out Below")
@@ -121,7 +152,7 @@ st.write(" ")
 st.write(" ")
 st.write(" ")
 
-st.write("So,what are you waiting for?   **Subscribe Now!**   and get a **30% discount** on your first month. ")
+#st.write("So,what are you waiting for?   **Subscribe Now!**   and get a **30% discount** on your first month. ")
 
 #Our collection contains an average rating of 4 to 4.2 stars with a certainty of 70% . So rest assured you'll be getting a top rated book-feed without taking the effort of researching.
 
@@ -143,7 +174,7 @@ st.markdown("With our freshly created set of CSV files we need to work some pand
             "wrangle this into something useful. Cleaning data was key, although much of this had been done in scraping, then we needed to make some dataframes for analysis. We wanted to explore how the ratings played a role im the rankings, so we performed some normalisations on the ratings data.")
 st.markdown("The code we used for this process can be found [here]("
             "<https://github.com/jobyid/strive_build_good_reads/blob/main/good_reads_preprocessing.py>) ")
-st.markdown("**Expand below to see the code**")
+
 with st.beta_expander("See the Code"):
     st.code('''import pandas as pd
 import numpy as np
@@ -219,7 +250,7 @@ st.subheader("Analyse the Data")
 st.markdown("The next step was to do some anaylsis of the data and create some useful tools. The "
             "best book by an author came from this step, along with producing some insights in "
             "what to visulise.")
-st.markdown("**Here's the code **")
+
 with st.beta_expander("See the code"):
     st.code('''import pandas as pd
     import numpy as np
