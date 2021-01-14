@@ -12,10 +12,9 @@ with st.beta_container():
         st.image('fig/all_distributions.png',use_column_width=True)
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they're *guaranteed* to
-                be random.
+                The chart above shows all the possible distributions we can try to fit to the data. We used this to determine the best fit. 
                 """)
+        st.image('fig/all_distributions.png',use_column_width=True)
     with col2:
         st.image('fig/avg_distribution.png',use_column_width=True)
         with st.beta_expander("See explanation"):

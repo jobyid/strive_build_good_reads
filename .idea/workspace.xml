@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/analyse_website.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocessing_website.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrpae_web.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/good_reads_website_representaion.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_reads_website_representaion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpahs.py" beforeDir="false" afterPath="$PROJECT_DIR$/grpahs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +135,22 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-981" y="-203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610628656948">
+      <screen x="-1366" y="-358" width="1366" height="694" />
+    </state>
+    <state x="-981" y="-203" key="#com.intellij.fileTypes.FileTypeChooser/-1366.-358.1366.694/0.23.1440.877@-1366.-358.1366.694" timestamp="1610628656948" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610618404384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
