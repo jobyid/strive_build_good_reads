@@ -16,8 +16,8 @@ def ratings_per_year_joint_plot():
     sns.set_style('darkgrid')
     sns.set(rc={'figure.figsize':(9,6)})
     sns.jointplot(x='original_publish_year', y='avg_rating', data=pdf)
+    plt.savefig("fig/ratings_year_joint.png")
     plt.show()
-
 
 # Question 10
 def awards_ratings():
