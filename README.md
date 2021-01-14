@@ -17,3 +17,4 @@ You can also use clone the git and use the command line to view analysis and vis
 To use the the command line: 
 1. change directory to the folder of the cloned git. 
 2. enter `python good_reads_main.py --help` to get the list of options. 
+3. enter 'good_reads_analyse.py' to understand more about the data
