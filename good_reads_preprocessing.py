@@ -66,4 +66,4 @@ def clean_the_places():
 
     print(places)
 
-clean_the_places()
+

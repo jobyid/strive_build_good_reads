@@ -9,19 +9,17 @@ import time
 st.subheader("Processing the Data")
 st.markdown("With our freshly created set of CSV files we need to work some pandas magic and "
             "wrangle this into something useful. Cleaning data was key, although much of this had been done in scraping, then we needed to make some dataframes for analysis. We wanted to explore how the ratings played a role im the rankings, so we performed some normalisations on the ratings data.")
-st.markdown("The code we used fort his process can be found [here](<https://github.com/jobyid/strive_build_good_reads/blob/main/good_reads_preprocessing.py>) ")
-st.markdown("**Here a selection of functions  you might like**")
-code1, code2 = st.beta_columns(2)
-with code1:
-    st.code('''def mean_minmax_normalisation(df):'
-            'da = df["avg_rating"]'
-            'normalized_da =  1 + ((da - da.mean())/(da.max() - da.min())) * 9'
-            'normalized_df_max_min = 1 + ((da - da.min())/(da.max() - da.min())) * 9'
-            'df["norm_mean"] = normalized_da'
-            'df["norm_max_min"] = normalized_df_max_min'
-            'return df''')
-with code2:
-    st.code('''def pre_process(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4):
+st.markdown("The code we used for this process can be found [here]("
+            "<https://github.com/jobyid/strive_build_good_reads/blob/main/good_reads_preprocessing.py>) ")
+st.markdown("**Expand below to see the code**")
+with st.beta_expander("See the Code"):
+    st.code('''import pandas as pd
+import numpy as np
+
+
+
+
+def pre_process(csv_filepath1, csv_filepath2, csv_filepath3, csv_filepath4):
 
     df = pd.read_csv(csv_filepath1, index_col=0)
     df1 = pd.read_csv(csv_filepath2)
@@ -65,4 +63,23 @@ with code2:
     good_read = pd.DataFrame(data)
 
 
-    return good_read''')
+    return good_read
+
+
+def mean_minmax_normalisation(df):
+    da = df["avg_rating"]
+    normalized_da =  1 + ((da - da.mean())/(da.max() - da.min())) * 9
+    normalized_df_max_min = 1 + ((da - da.min())/(da.max() - da.min())) * 9
+    df["norm_mean"] = normalized_da
+    df["norm_max_min"] = normalized_df_max_min
+    return df
+
+def clean_the_places():
+    df = pd.read_csv('data/places.csv')
+    df.replace(to_replace=[r"\\t|\\n|\\r", "\t|\n|\r"], value=["",""], regex=True, inplace=True)
+    places = df['places'].dropna()
+
+    print(places)
+
+
+''')
