@@ -82,7 +82,7 @@ with st.beta_container():
         st.markdown("**Ratings Vs Series**")
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above shows the relationship between average rating and if a book is 
+                The chart shows the relationship between average rating and if a book is 
                 part of a series or not. As you can see from the figure there is not a 
                 significant differance. In fact from this data we concluded that whether or not a book is in a series of books did not affect its rating.   
                 """)
@@ -91,7 +91,7 @@ with st.beta_container():
         st.markdown("**Distribution**")
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above depicts how closely distribution of average rating of books rated as best ever
+                The chart depicts how closely distribution of average rating of books rated as best ever
                 follows that of a normal distribution and that the highest point on the data distribution curve is 4.03.
                  This implies that most books had a rating around 4.03.
                 """)
@@ -114,7 +114,7 @@ with st.beta_container():
         st.markdown("**Average Rating**")
         with st.beta_expander("See explanation"):
             st.write("""
-                The chart above illustrates how 50% of average ratings of books lie between 3.95 to 4.21.
+                The chart illustrates how 50% of average ratings of books lie between 3.95 to 4.21.
                 We can also see that there are a few outliers.
                 """)
         st.image('fig/Avg_Rating_boxplot.png',use_column_width=True)
@@ -159,6 +159,18 @@ st.write(" ")
 #Graphs awards-ratings
 
 #Despite the awards count, you can rely on us to select good quality books for your mind.
+st.title("Observations/Conclusions")
+st.write("So here is what we can conclude from all our work.")
+st.markdown('''1. New awards are invented each each which is why newer books have mre awards.
+2. The best measure of a book is the number of ratings, this offer the most significant 
+differance between best and worse. 
+3. Average rating is not a good measure as it seems there is a confirmation biases where most 
+people rate books within a smaller range to the current average. with very few outliers. We 
+Suggests this is because readers feel unable to leave a rating widely outside the current range.
+4. All the top 1000 books in the good read best book ever list are good books, you are unlikely 
+to go wrong with any of them. 
+5. Given that all the books on the list are good this may suggest that exploring books outside 
+the genre you typically read would be fruitful, and enhance your reading experience. ''')
 
 st.title("The Science behind it all")
 st.subheader("Scraping the Data")
