@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recommendation_engine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website_badges.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_badges.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good_reads_website_representaion.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_reads_website_representaion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +48,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/good_reads_website_representaion.py" />
   </component>
-  <component name="RunManager" selected="Python.recommendation_engine">
-    <configuration name="recommendation_engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.good_reads_website_representaion">
+    <configuration name="good_reads_website_representaion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="strive_build_good_reads" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,7 +61,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recommendation_engine.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/good_reads_website_representaion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.recommendation_engine" />
+        <item itemvalue="Python.good_reads_website_representaion" />
         <item itemvalue="Python.visualIzations 4to6" />
         <item itemvalue="Python.stats" />
         <item itemvalue="Python.visulisations" />
@@ -171,45 +170,37 @@
       <screen x="-1366" y="-358" width="1366" height="694" />
     </state>
     <state x="-981" y="-203" key="#com.intellij.fileTypes.FileTypeChooser/-1366.-358.1366.694/0.23.1440.877@-1366.-358.1366.694" timestamp="1610628656948" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610618404384">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610639308498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610618404384" />
-    <state width="1366" height="190" key="GridCell.Tab.0.bottom" timestamp="1610645106974">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610639308498" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1610639542053">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1366" height="158" key="GridCell.Tab.0.bottom/-1366.-358.1366.694/0.23.1440.877@-1366.-358.1366.694" timestamp="1610633711070" />
     <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453147" />
     <state width="1345" height="203" key="GridCell.Tab.0.bottom/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638197" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="190" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1610642115368" />
-    <state width="1366" height="190" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1610645106974" />
-    <state width="1366" height="190" key="GridCell.Tab.0.center" timestamp="1610645106973">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610639542053" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1610639542052">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1366" height="158" key="GridCell.Tab.0.center/-1366.-358.1366.694/0.23.1440.877@-1366.-358.1366.694" timestamp="1610633711069" />
     <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453147" />
     <state width="1345" height="203" key="GridCell.Tab.0.center/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638196" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="190" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1610642115367" />
-    <state width="1366" height="190" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1610645106973" />
-    <state width="1366" height="190" key="GridCell.Tab.0.left" timestamp="1610645106973">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610639542052" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1610639542051">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1366" height="158" key="GridCell.Tab.0.left/-1366.-358.1366.694/0.23.1440.877@-1366.-358.1366.694" timestamp="1610633711069" />
     <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453146" />
     <state width="1345" height="203" key="GridCell.Tab.0.left/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638196" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="190" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1610642115367" />
-    <state width="1366" height="190" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1610645106973" />
-    <state width="1366" height="190" key="GridCell.Tab.0.right" timestamp="1610645106974">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610639542051" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1610639542052">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1366" height="158" key="GridCell.Tab.0.right/-1366.-358.1366.694/0.23.1440.877@-1366.-358.1366.694" timestamp="1610633711070" />
     <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.823@0.23.1440.823" timestamp="1610459453147" />
     <state width="1345" height="203" key="GridCell.Tab.0.right/-1366.-358.1366.745/0.23.1440.825@0.23.1440.825" timestamp="1610450638197" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610539670909" />
-    <state width="1366" height="190" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1610642115367" />
-    <state width="1366" height="190" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1610645106974" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610639542052" />
   </component>
 </project>
