@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/strive_build_good_reads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/strive_build_good_reads.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/good_reads_website_representaion.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_reads_website_representaion.py" afterDir="false" />
     </list>
