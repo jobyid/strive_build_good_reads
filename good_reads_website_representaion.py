@@ -50,7 +50,7 @@ with st.sidebar.beta_container():
     below, and get the perfect next read. """)
     st.text_input("Enter the last book you read:")
     if st.button("Recommend"):
-        st.write("The science says you should read:")
+        st.write("**The science says you should read:**")
         with st.spinner("Wait For it"):
             time.sleep(2)
             ballons = True
@@ -621,7 +621,6 @@ with st.sidebar.beta_container():
     with team2:
         st.markdown("[**Martin Vilar Karlen**](<https://github.com/mvilar2018>)")
         st.image("fig/martin.png",use_column_width=True)
-
         st.markdown("[**Oluseyi Oyedemi**](<https://github.com/Seyi85>)")
         st.image("fig/oluseyi.png",use_column_width=True)
 
