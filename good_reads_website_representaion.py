@@ -6,7 +6,7 @@ from PIL import Image
 import recommendation_engine as re
 import time
 df = pd.read_csv('data/good_reads_df_web.csv',index_col=0)
-da = pd.read_csv('data/awards_by_year.csv')
+#da = pd.read_csv('data/awards_by_year.csv')
 
 b1, b2 = st.beta_columns([1,8])
 with b1:
@@ -606,8 +606,8 @@ st.write("")
 st.write("")
 st.write("")
 
-st.subheader("Interesting Data")
-st.dataframe(da)
+#st.subheader("Interesting Data")
+#st.dataframe(da)
 
 
 with st.sidebar.beta_container():
