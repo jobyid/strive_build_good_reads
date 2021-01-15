@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/good_reads_website_representaion.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_reads_website_representaion.py" afterDir="false" />
-    </list>
+    <list default="true" id="f2c84f6e-27d5-4e37-b654-ed1358ed477a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
