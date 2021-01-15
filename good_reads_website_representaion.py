@@ -165,7 +165,7 @@ st.markdown('''1. New awards are invented each year which is why newer books hav
 2. The best measure of a book is the number of ratings, this offer the most significant 
 differance between best and worse. 
 3. Average rating is not a good measure as it seems there is a confirmation biases where most 
-people rate books within a smaller range to the current average. with very few outliers. We 
+people rate books within a smaller range to the current average with very few outliers. We 
 Suggests this is because readers feel unable to leave a rating widely outside the current range.
 4. All the top 1000 books in the good read best book ever list are good books, you are unlikely 
 to go wrong with any of them. 
@@ -179,7 +179,7 @@ st.markdown("The data for our exploration of the best reads came from the websit
             "discontinued, so we scrapped the data. To do this we used [Octoparse]("
             "<https://octoparse.com>). Each of the Octoparse scripts we used are [here]("
             "<https://github.com/jobyid/strive_build_good_reads/tree/main/Scrape>) one of the "
-            "exciting things about using Octoparse was the bility to clean the data as the "
+            "exciting things about using Octoparse was the ability to clean the data as the "
             "scraping process happened. In the end we were left with a string of csv files")
 st.subheader("Processing the Data")
 st.markdown("With our freshly created set of CSV files we need to work some pandas magic and "
