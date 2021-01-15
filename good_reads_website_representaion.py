@@ -614,15 +614,16 @@ with st.sidebar.beta_container():
     st.subheader("The Team of Book Readers and Data Lovers")
     team1, team2 = st.beta_columns(2)
     with team1:
-        st.markdown("[**Joby ingram-Dodd**](<https://github.com/jobyid>)")
-        st.image("fig/joby.png",use_column_width=True)
-        st.markdown("[**Ibrahim Animashaun**](<https://github.com/iaanimashaun>)")
-        st.image("fig/ibrahim.png",use_column_width=True)
-    with team2:
         st.markdown("[**Martin Vilar Karlen**](<https://github.com/mvilar2018>)")
         st.image("fig/martin.png",use_column_width=True)
-        st.markdown("[**Oluseyi Oyedemi**](<https://github.com/Seyi85>)")
+        st.markdown("""[**Oluseyi Oyedemi**](<https://github.com/Seyi85>)""")
         st.image("fig/oluseyi.png",use_column_width=True)
+    with team2:
+        st.markdown("[**Ibrahim Animashaun**](<https://github.com/iaanimashaun>)")
+        st.image("fig/ibrahim.png",use_column_width=True)
+        st.markdown("[**Joby ingram-Dodd**](<https://github.com/jobyid>)")
+        st.image("fig/joby.png",use_column_width=True)
+
 
 with st.sidebar.beta_container():
     st.subheader("Like what we are doing? Why not buy us a coffee?")
