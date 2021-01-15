@@ -65,16 +65,16 @@ with st.beta_container():
         st.markdown("**Fit a Distribution**")
         with st.beta_expander("See explanation"):
             st.write("""
-                This chart shows how our the average rating of the best books ever
+                This chart clearly shows how our the average rating of the best books ever
                  fits to the full list of the current scipy.stats distributions  
                  and also determine the distribution with the least error. """)
         st.image('fig/all_distributions.png',use_column_width=True)
 
         st.write("")
         st.write("")
-        st.markdown("**Highest All-time Rated Books**")
+        st.markdown("**Highest Rated Books**")
         with st.beta_expander("See explanation"):
-            st.write("Keep track of the ratings' evolution with our Data Science statistics!")
+            st.write("A representation of the top 10 highest rated books")
         st.image('fig/Best_Books_With_Highest_Rating.png',use_column_width=True)
 
         st.write("")
@@ -83,7 +83,7 @@ with st.beta_container():
         with st.beta_expander("See explanation"):
             st.write("""
                 The chart shows the relationship between average rating and if a book is 
-                part of a series or not. As you can see from the figure there is not a 
+                part of a series or not. As you can see from the figure there is no
                 significant differance. In fact from this data we concluded that whether or not a book is in a series of books did not affect its rating.   
                 """)
         st.image('fig/Avg_Rating_Violin_plot.png',use_column_width=True)
@@ -101,14 +101,14 @@ with st.beta_container():
         st.write("")
         st.markdown("**Ratings vs Year**")
         with st.beta_expander("See explanation"):
-            st.write("Check where your preffered literature stands, regardless the year it was written in!")
+            st.write("Showing the ratings vs the year ")
         st.image('fig/ratings_year_joint.png',use_column_width=True)
 
         st.write("")
         st.write("")
         st.markdown("**Highest Reviewed Books **")
         with st.beta_expander("See explanation"):
-            st.write("Have a quick glance at the top 10 most reviewed books, which assures their quality")
+            st.write("The top 10 highest reviewed books")
         st.image("fig/Best_Books_With_Highest_Reviews.png",use_column_width=True)
     with col3:
         st.markdown("**Average Rating**")
@@ -123,14 +123,14 @@ with st.beta_container():
         st.write("")
         st.markdown("**Books with most Awards**")
         with st.beta_expander("See explanation"):
-            st.write("Keep updated on the quantity of awards the top 10 of our collection counts with!")
+            st.write("top 10 ten most awarded books")
         st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
 
         st.write("")
         st.write("")
         st.markdown("**Pages vs Ratings**")
         with st.beta_expander("See explanation"):
-            st.write("This is how we guarantee you the quantity of reviews related to the long of the book!")
+            st.write("Number of pages vs rating")
         st.image("fig/num_pages_rating_scatter.png",use_column_width=True)
 
 
@@ -161,7 +161,7 @@ st.write(" ")
 #Despite the awards count, you can rely on us to select good quality books for your mind.
 st.title("Observations/Conclusions")
 st.write("So here is what we can conclude from all our work.")
-st.markdown('''1. New awards are invented each each which is why newer books have mre awards.
+st.markdown('''1. New awards are invented each which is why newer books have mre awards.
 2. The best measure of a book is the number of ratings, this offer the most significant 
 differance between best and worse. 
 3. Average rating is not a good measure as it seems there is a confirmation biases where most 
