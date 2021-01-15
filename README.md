@@ -57,7 +57,7 @@ What was particularly useful was the ability to clean data with Octoparse as we 
 Within the good_reads_preprocesing.py file is the code we used to prepare the data. That we used mfor the analysis and visualization 
 
 ## Exploring the Data     
-We have prepared a website here which details our findings.
+We have prepared a website [here](<https://strive-good-reads.herokuapp.com>) which details our findings.
 You can also use clone the git and use the command line to view analysis and visualisations of the data. 
 
 
