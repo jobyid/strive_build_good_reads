@@ -18,10 +18,10 @@ with b2:
                      '=python'
             '&logoColor=white)')
 
+st.image("fig/banner.png",use_column_width = True)
+#st.title("Explore our collection!")
 
-st.title("Explore our collection!")
-
-st.header("Reading. Data Science supported.")
+#st.header("Reading. Data Science supported.")
 st.write(" ")
 st.subheader("Are you looking for a really good read that is worth your while? Think no more, choose one of the following from our cross checked database.")
 st.write(" ")
