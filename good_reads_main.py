@@ -1,6 +1,7 @@
 import good_reads_visulisation as grv
 import good_reads_stats as grs
 import good_reads_analyse as gra
+import recommendation_engine as re
 import sys
 import click
 import pandas as pd
@@ -21,9 +22,15 @@ import matplotlib.pyplot as plt
                                     "following options: ['awards', 'original_publish_year']")
 
 @click.option("--author", "-au", type=str, help="Enter the the name of an author in '' eg 'Jane "
-                                                "Austin'")
-
-def good_reads(visualise, stats, analysis, author):
+                                                "Austen'")
+@click.option("--recommend", "-r",type=str, help="Enter the last book you read and get a "
+                                                 "recommendation for your next read.For book "
+                                                 "titles of more then 1 work enter "
+                                                 "inside quotation marks. eg. 'Harry Potter' ")
+def good_reads(visualise, stats, analysis, author, recommend):
+    if recommend is not None:
+        book = str(re.recoomend_a_book())
+        click.echo("The science say you should read: " + book)
     if analysis == 'original_publish_year':
         gra.original_publish_year(gra.df)
     if analysis == 'awards':
