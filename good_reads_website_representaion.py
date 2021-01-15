@@ -6,6 +6,7 @@ from PIL import Image
 import recommendation_engine as re
 import time
 df = pd.read_csv('data/good_reads_df_web.csv',index_col=0)
+df.index += 1
 #da = pd.read_csv('data/awards_by_year.csv')
 
 b1, b2 = st.beta_columns([1,8])
