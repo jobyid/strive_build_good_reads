@@ -65,7 +65,7 @@ with st.beta_container():
         st.markdown("**Fit a Distribution**")
         with st.beta_expander("See explanation"):
             st.write("""
-                This chart shows how our the average rating of the best books ever
+                This chart clearly shows how our the average rating of the best books ever
                  fits to the full list of the current scipy.stats distributions  
                  and also determine the distribution with the least error. """)
         st.image('fig/all_distributions.png',use_column_width=True)
@@ -83,7 +83,7 @@ with st.beta_container():
         with st.beta_expander("See explanation"):
             st.write("""
                 The chart shows the relationship between average rating and if a book is 
-                part of a series or not. As you can see from the figure there is not a 
+                part of a series or not. As you can see from the figure there is no
                 significant differance. In fact from this data we concluded that whether or not a book is in a series of books did not affect its rating.   
                 """)
         st.image('fig/Avg_Rating_Violin_plot.png',use_column_width=True)
@@ -161,7 +161,7 @@ st.write(" ")
 #Despite the awards count, you can rely on us to select good quality books for your mind.
 st.title("Observations/Conclusions")
 st.write("So here is what we can conclude from all our work.")
-st.markdown('''1. New awards are invented each each which is why newer books have mre awards.
+st.markdown('''1. New awards are invented each which is why newer books have mre awards.
 2. The best measure of a book is the number of ratings, this offer the most significant 
 differance between best and worse. 
 3. Average rating is not a good measure as it seems there is a confirmation biases where most 
