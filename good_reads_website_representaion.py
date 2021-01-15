@@ -72,9 +72,9 @@ with st.beta_container():
 
         st.write("")
         st.write("")
-        st.markdown("**Highest Rated Books**")
+        st.markdown("**Highest All-time Rated Books**")
         with st.beta_expander("See explanation"):
-            st.write("A representation of the top 10 highest rated books")
+            st.write("Keep track of the ratings' evolution with our Data Science statistics!")
         st.image('fig/Best_Books_With_Highest_Rating.png',use_column_width=True)
 
         st.write("")
@@ -101,14 +101,14 @@ with st.beta_container():
         st.write("")
         st.markdown("**Ratings vs Year**")
         with st.beta_expander("See explanation"):
-            st.write("Showing the ratings vs the year ")
+            st.write("Check where your preffered literature stands, regardless the year it was written in!")
         st.image('fig/ratings_year_joint.png',use_column_width=True)
 
         st.write("")
         st.write("")
         st.markdown("**Highest Reviewed Books **")
         with st.beta_expander("See explanation"):
-            st.write("The top 10 highest reviewed books")
+            st.write("Have a quick glance at the top 10 most reviewed books, which assures their quality")
         st.image("fig/Best_Books_With_Highest_Reviews.png",use_column_width=True)
     with col3:
         st.markdown("**Average Rating**")
@@ -123,14 +123,14 @@ with st.beta_container():
         st.write("")
         st.markdown("**Books with most Awards**")
         with st.beta_expander("See explanation"):
-            st.write("top 10 ten most awarded books")
+            st.write("Keep updated on the quantity of awards the top 10 of our collection counts with!")
         st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
 
         st.write("")
         st.write("")
         st.markdown("**Pages vs Ratings**")
         with st.beta_expander("See explanation"):
-            st.write("Number of pages vs rating")
+            st.write("This is how we guarantee you the quantity of reviews related to the long of the book!")
         st.image("fig/num_pages_rating_scatter.png",use_column_width=True)
 
 
