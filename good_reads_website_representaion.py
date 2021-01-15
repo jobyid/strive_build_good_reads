@@ -74,7 +74,7 @@ with st.beta_container():
         st.write("")
         st.markdown("**Highest Rated Books**")
         with st.beta_expander("See explanation"):
-            st.write("A representation of the top 10 highest rated books")
+            st.write("Stay up to date with the best 10 rated books according to our readers")
         st.image('fig/Best_Books_With_Highest_Rating.png',use_column_width=True)
 
         st.write("")
@@ -101,14 +101,14 @@ with st.beta_container():
         st.write("")
         st.markdown("**Ratings vs Year**")
         with st.beta_expander("See explanation"):
-            st.write("Showing the ratings vs the year ")
+            st.write("Access to our Collection means you'll enjoy the best literature regardless the year it was written in ")
         st.image('fig/ratings_year_joint.png',use_column_width=True)
 
         st.write("")
         st.write("")
         st.markdown("**Highest Reviewed Books **")
         with st.beta_expander("See explanation"):
-            st.write("The top 10 highest reviewed books")
+            st.write("Check out the reads with more reviews, which guarantees their quaility and the readers' rating")
         st.image("fig/Best_Books_With_Highest_Reviews.png",use_column_width=True)
     with col3:
         st.markdown("**Average Rating**")
@@ -123,14 +123,14 @@ with st.beta_container():
         st.write("")
         st.markdown("**Books with most Awards**")
         with st.beta_expander("See explanation"):
-            st.write("top 10 ten most awarded books")
+            st.write("Check out the top 10 most awarded books on our Collection")
         st.image("fig/Best_Books_With_Most_Awards.png",use_column_width=True)
 
         st.write("")
         st.write("")
         st.markdown("**Pages vs Ratings**")
         with st.beta_expander("See explanation"):
-            st.write("Number of pages vs rating")
+            st.write("Here you can have insight into the lenght of the books compared with the quantity of reviews")
         st.image("fig/num_pages_rating_scatter.png",use_column_width=True)
 
 
