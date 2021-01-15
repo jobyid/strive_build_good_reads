@@ -55,7 +55,7 @@ with st.sidebar.beta_container():
             time.sleep(2)
             ballons = True
         book = re.recoomend_a_book()
-        st.markdown(book)
+        st.success(book)
 if ballons:
     st.balloons()
 with st.beta_container():
