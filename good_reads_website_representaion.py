@@ -161,7 +161,7 @@ st.write(" ")
 #Despite the awards count, you can rely on us to select good quality books for your mind.
 st.title("Observations/Conclusions")
 st.write("So here is what we can conclude from all our work.")
-st.markdown('''1. New awards are invented each which is why newer books have mre awards.
+st.markdown('''1. New awards are invented each which is why newer books have more awards.
 2. The best measure of a book is the number of ratings, this offer the most significant 
 differance between best and worse. 
 3. Average rating is not a good measure as it seems there is a confirmation biases where most 
